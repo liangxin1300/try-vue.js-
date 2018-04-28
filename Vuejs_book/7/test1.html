@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+<title>VueJS</title>
+</head>
+<body>
+<div id="app">
+  <my-component><my-component>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+<script>
+  Vue.component('my-component', {
+    template: '<div>This is content of component</div>'
+  });
+
+  var app = new Vue({
+    el: '#app'
+  })
+</script>
+</body>
+</html>
