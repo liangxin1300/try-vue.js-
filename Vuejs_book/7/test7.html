@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<title>VueJS</title>
+</head>
+<body>
+<div id="app">
+  <my-component :width="100"><my-component>
+</div>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script>
+  Vue.component('my-component', {
+    props: ['width'],
+    template: '<div :style="style">Component contents</div>',
+    computed: {
+      style: function() {
+        return {
+          width: this.width + 'px'
+        }
+      }
+    }
+  });
+
+  var app = new Vue({
+    el: '#app'
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+<head>
+<title>VueJS</title>
+</head>
+<body>
+<div id="app">
+  <my-component :width="100"><my-component>
+</div>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script>
+</script>
+</body>
+</html>
